@@ -44,7 +44,6 @@ const hitungKeliling = (hitungkeliling) => {
     
 const output = hitungkeliling.previousElementSibling;
 
-
     if (!sisiKeliling) {
     output.innerHTML = "Nilai sisi harus di isi";
     output.classList.add("error");
