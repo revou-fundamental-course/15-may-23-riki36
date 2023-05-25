@@ -338,6 +338,13 @@ main .box .formula-box form button {
   margin: 0 auto;
 }
 
+.text {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+  
+}
+
 .corner {
   position: absolute;
   width: 10px;
@@ -363,12 +370,6 @@ main .box .formula-box form button {
 .corner.d {
   bottom: 0;
   left: 0;
-}
-
-.text {
-  font-size: 15px;
-  margin-top: 5px;
-  text-align: center;
 }
 
 .corner-label {

@@ -17,7 +17,7 @@ const kelilingPersegi = (s) => {
 const hitungLuasPersegi = (h) => {
 const output = h.previousElementSibling;
 
-// Memeriksa apakah nilai sisi kosong atau bukan angka
+
     if (!sisiLuas) {
     output.innerHTML = "Nilai sisi harus di isi";
     output.classList.add("error");
@@ -41,9 +41,10 @@ const output = h.previousElementSibling;
 }
 
 const hitungKelilingPersegi = (h) => {
+    
 const output = h.previousElementSibling;
 
-// Memeriksa apakah nilai sisi kosong atau bukan angka
+
     if (!sisiKeliling) {
     output.innerHTML = "Nilai sisi harus di isi";
     output.classList.add("error");
@@ -63,7 +64,7 @@ const output = h.previousElementSibling;
     `;
 
     output.innerHTML = outputTag;
-    
+
 }
 
 const resetAll = (r) => {
