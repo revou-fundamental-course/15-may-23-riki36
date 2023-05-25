@@ -28,9 +28,9 @@
                     <br>
                 </section>
                             <div class="formula-box">
-                                <div id="luas">
+                                <div id="luaspersegi">
                                     <div class="bordered">
-                                        <div class="title bg-primary1 padding-20">
+                                        <div class="title bg-secondary padding-20">
                                             <h3 class="text-center">Luas Persegi</h3>
                                         </div>
                                         <div class="padding-left-20 padding-right-20 padding-bottom-20">
@@ -41,9 +41,9 @@
                                                           <div class="corner c"></div>
                                                           <div class="corner d"></div>
                                                         </div>
-                                                        <p class="text">
+                                                        <h3 class="text">
                                                           Bujur Sangkar
-                                                        </p>
+                                                        </h3>
                                                       </div>
                                             <div class="desc">
                                                 <p>Rumus Luas Persegi yaitu :</p>
@@ -55,12 +55,12 @@
                                             <hr class="margin-bottom-20 margin-top-20">
                                             <div class="calc-field text-center">
                                                 <h2 class="margin-bottom-10">Hitung Luas Persegi</h2>
-                                                <form name="persegiForm" action="">
-                                                    <input class="margin-bottom-10" type="text" name="sisi" id="sisi" placeholder="Nilai Sisi" onchange="luasPersegi(this)">
+                                                <form name="hitungluaspersegi" action="">
+                                                    <input class="margin-bottom-10" type="text" name="inputluas" id="input-luas" placeholder="Nilai Sisi" onchange="inputLuas(this)">
                                                     <div id="output_luas" class="output text-left" ></div>
-                                                    <input type="button" value="Hitung" onclick="hitungLuasPersegi(this) ">
+                                                    <input type="button" value="Hitung" id="hitung-luas" onclick="hitungLuas(this) ">
                                                     <div class="reset-block margin-top-30 text-right">
-                                                        <button type="reset" value="Reset" onclick="resetAll(this)">Reset</button>
+                                                        <button type="reset" id="reset-luas" onclick="resetAll(this)">Reset</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -68,9 +68,9 @@
                                     </div>
                                 </div>
                                 
-                                <div id="keliling">
+                                <div id="kelilingpersegi">
                                     <div class="bordered">
-                                        <div class="title bg-primary1 paddingg-20">
+                                        <div class="title bg-secondary paddingg-20">
                                             <h3 class="text-center">Keliling Persegi</h3>
                                         </div>
                                         <div class="padding-left-20 padding-right-20 padding-bottom-20">
@@ -81,9 +81,9 @@
                                                     <div class="corner c"></div>
                                                     <div class="corner d"></div>
                                                   </div>
-                                                  <p class="text">
+                                                  <h3 class="text">
                                                     Bujur Sangkar
-                                                  </p>
+                                                  </h3>
                                             </div>
                                             <div class="desc">
                                                 <p>Rumus Keliling Persegi yaitu :</p>
@@ -95,12 +95,12 @@
                                             <hr class="margin-bottom-20 margin-top-20">
                                             <div class="calc-field text-center">
                                                 <h2 class="margin-bottom-10">Hitung Keliling Persegi</h2>
-                                                <form name="persegiForm" action="">
-                                                    <input class="margin-bottom-10" type="text" name="sisi" id="sisi" placeholder="Nilai Sisi" onchange="kelilingPersegi(this)" >
+                                                <form name="hitungkelilingpersegi" action="">
+                                                    <input class="margin-bottom-10" type="text" name="inputkeliling" id="input-keliling" placeholder="Nilai Sisi" onchange="inputKeliling(this)" >
                                                     <div id="output_keliling" class="output text-left"></div>
-                                                    <input type="button" value="Hitung" onclick="hitungKelilingPersegi(this)">
+                                                    <input type="button" value="Hitung" id="hitung-keliling" onclick="hitungKeliling(this)">
                                                     <div class="reset-block margin-top-30 text-right">
-                                                        <button type="reset" value="Reset" onclick="resetAll(this)">Reset</button>
+                                                        <button type="reset" id="reset-keliling" onclick="resetAll(this)">Reset</button>
                                                     </div>
                                                 </form>
                                             </div>

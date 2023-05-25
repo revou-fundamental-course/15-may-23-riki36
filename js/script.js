@@ -2,20 +2,20 @@
 let sisiLuas, sisiKeliling;
 let outputLuasPersegi, outputKelilingPersegi;
 
-const luasPersegi = (s) => {
-    console.log(s.value * s.value);
-    sisiLuas = s.value;
-    outputLuasPersegi = s.value * s.value;
+const inputLuas = (sisiluas) => {
+
+    sisiLuas = sisiluas.value;
+    outputLuasPersegi = sisiluas.value * sisiluas.value;
 }
 
-const kelilingPersegi = (s) => {
-    console.log(4 * s.value);
-    sisiKeliling = s.value;
-    outputKelilingPersegi = 4 * s.value;
+const inputKeliling = (sisikeliling) => {
+
+    sisiKeliling = sisikeliling.value;
+    outputKelilingPersegi = 4 * sisikeliling.value;
 }
 
-const hitungLuasPersegi = (h) => {
-const output = h.previousElementSibling;
+const hitungLuas = (hitungluas) => {
+const output = hitungluas.previousElementSibling;
 
 
     if (!sisiLuas) {
@@ -40,9 +40,9 @@ const output = h.previousElementSibling;
     
 }
 
-const hitungKelilingPersegi = (h) => {
+const hitungKeliling = (hitungkeliling) => {
     
-const output = h.previousElementSibling;
+const output = hitungkeliling.previousElementSibling;
 
 
     if (!sisiKeliling) {
@@ -70,10 +70,16 @@ const output = h.previousElementSibling;
 const resetAll = (r) => {
 const form = r.closest('form');
 const output = form.querySelector('.output');
-const submitButton = form.querySelector('input[type="submit"]');
+const submitButton = form.querySelector('input[id="hitung-luas"][id="hitung-keliling"]');
 output.innerHTML = "";
 sisiLuas = undefined;
 sisiKeliling = undefined;
 form.reset();
 
 }
+
+  
+  
+  
+  
+  

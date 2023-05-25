@@ -244,7 +244,7 @@ body {
   color: #fff;
 }
 
-.bg-primary1 {
+.bg-secondary {
   background-color: #2880B9;
   color: #fff;
   font-size: 30px;
@@ -282,7 +282,7 @@ main .box .formula-box form input[type=text] {
   padding: 6px 6px;
   margin: 8px 0;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 main .box .formula-box form input[type=button] {
