@@ -372,6 +372,12 @@ main .box .formula-box form button {
   left: 0;
 }
 
+.text {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
 .corner-label {
   display: inline-block;
   margin: 0 5px;
