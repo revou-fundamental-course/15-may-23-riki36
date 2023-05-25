@@ -35,8 +35,16 @@
                                         </div>
                                         <div class="padding-left-20 padding-right-20 padding-bottom-20">
                                             <div class="image-ref text-center padding-top-10 padding-bottom-10">
-                                                <img src="assets/bujursangkar.jpg">
-                                            </div>
+                                                          <div class="square">
+                                                          <div class="corner a"></div>
+                                                          <div class="corner b"></div>
+                                                          <div class="corner c"></div>
+                                                          <div class="corner d"></div>
+                                                        </div>
+                                                        <p class="text">
+                                                          Bujur Sangkar
+                                                        </p>
+                                                      </div>
                                             <div class="desc">
                                                 <p>Rumus Luas Persegi yaitu :</p>
                                                 <p class="text-center padding-top-10 padding-bottom-10"><strong>L = S x S</strong></p>
@@ -47,12 +55,12 @@
                                             <hr class="margin-bottom-20 margin-top-20">
                                             <div class="calc-field text-center">
                                                 <h2 class="margin-bottom-10">Hitung Luas Persegi</h2>
-                                                <form action="">
-                                                    <input class="margin-bottom-10" type="text" name="" id="sisi" placeholder="Nilai Sisi" onchange="luasPersegi(this)">
-                                                    <div id="output_luas" class="output text-left"></div>
+                                                <form name="persegiForm" action="">
+                                                    <input class="margin-bottom-10" type="text" name="sisi" id="sisi" placeholder="Nilai Sisi" onchange="luasPersegi(this)">
+                                                    <div id="output_luas" class="output text-left" ></div>
                                                     <input type="button" value="Hitung" onclick="hitungLuasPersegi(this) ">
                                                     <div class="reset-block margin-top-30 text-right">
-                                                        <button type="reset" onclick="resetAll(this)">Reset</button>
+                                                        <button type="reset" value="Reset" onclick="resetAll(this)">Reset</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -67,7 +75,15 @@
                                         </div>
                                         <div class="padding-left-20 padding-right-20 padding-bottom-20">
                                             <div class="image-ref text-center padding-top-10 padding-bottom-10">
-                                                <img src="assets/bujursangkar.jpg">
+                                                <div class="square">
+                                                    <div class="corner a"></div>
+                                                    <div class="corner b"></div>
+                                                    <div class="corner c"></div>
+                                                    <div class="corner d"></div>
+                                                  </div>
+                                                  <p class="text">
+                                                    Bujur Sangkar
+                                                  </p>
                                             </div>
                                             <div class="desc">
                                                 <p>Rumus Keliling Persegi yaitu :</p>
@@ -79,12 +95,12 @@
                                             <hr class="margin-bottom-20 margin-top-20">
                                             <div class="calc-field text-center">
                                                 <h2 class="margin-bottom-10">Hitung Keliling Persegi</h2>
-                                                <form action="">
-                                                    <input class="margin-bottom-10" type="text" name="" id="sisi" placeholder="Nilai Sisi" onchange="kelilingPersegi(this)">
+                                                <form name="persegiForm" action="">
+                                                    <input class="margin-bottom-10" type="text" name="sisi" id="sisi" placeholder="Nilai Sisi" onchange="kelilingPersegi(this)" >
                                                     <div id="output_keliling" class="output text-left"></div>
                                                     <input type="button" value="Hitung" onclick="hitungKelilingPersegi(this)">
                                                     <div class="reset-block margin-top-30 text-right">
-                                                        <button type="reset" onclick="resetAll(this)">Reset</button>
+                                                        <button type="reset" value="Reset" onclick="resetAll(this)">Reset</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -95,7 +111,7 @@
                         </div>         
 
 
-            <script src="/js/script.js"></script>
+            <script src="js/script.js"></script>
     <footer>
     </footer>
 

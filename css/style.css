@@ -282,7 +282,9 @@ main .box .formula-box form input[type=text] {
   padding: 6px 6px;
   margin: 8px 0;
   box-sizing: border-box;
+  border-radius: 6px;
 }
+
 main .box .formula-box form input[type=button] {
   cursor: pointer;
   height: 30px;
@@ -294,9 +296,11 @@ main .box .formula-box form input[type=button] {
   border: 0;
   transition: 0.3s;
 }
+
 main .box .formula-box form input[type=button]:hover {
   background: #3498DB;
 }
+
 main .box .formula-box form .output {
   margin-bottom: 1rem;
 }
@@ -320,4 +324,54 @@ main .box .formula-box form button {
   color: #fff;
   }
 }
+
+.error {
+  color: red;
+}
   
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f1f1f1;
+  border: 2px solid #ff0000;
+  margin: 0 auto;
+}
+
+.corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+}
+
+.corner.a {
+  top: 0;
+  left: 0;
+}
+
+.corner.b {
+  top: 0;
+  right: 0;
+}
+
+.corner.c {
+  bottom: 0;
+  right: 0;
+}
+
+.corner.d {
+  bottom: 0;
+  left: 0;
+}
+
+.text {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.corner-label {
+  display: inline-block;
+  margin: 0 5px;
+}
